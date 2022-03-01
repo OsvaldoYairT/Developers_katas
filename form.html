@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Oswald:wght@600&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <div>
+          <ul class="menu">
+            <img src="/img/logo.jpg" alt="logo" width="250" />
+            <li><a href="/login.html">Login </a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Inicio</a></li>
+          </ul>
+        </div>
+      </header>
+    <h1>Formulario de Pedido</h1>
+    <form action="mi_servidor" method="post" target="_black" autocomplete="off">
+      <fieldset>
+        <legend>Datos Generales</legend>
+
+        <label for="nombre" class="letra">Nombre:</label> <br/>
+        <input type="text" id="nombre" name="nombre"
+          placeholder="Escribe tu nombre" required="true"/>
+          <br/>
+
+        <label for="apellido" class="letra">Apellido:</label> <br/>
+        <input type="text" id="apellido"name="apellido"
+          placeholder="Escribe tu apellido"required="true"/>
+          <br/>
+
+        <label for="email" class="letra">Email</label><br/>
+        <input type="email" id="email" name="email"/><br/>
+
+        <label for="edad" class="letra">Edad:</label><br />
+        <input type="number" id="edad" name="edad" step="any"/><br/>
+
+        <label class="letra">Tipo de Pastel</label><br/>
+        <input type="radio" id="gelatina" name="pastel" value="gelatina"/>
+        <label for="gelatina">Gelatina</label><br/>
+        <input type="radio" id="mini" name="pastel" value="mini"/>
+        <label for="mini">Pastel Mini</label><br/>
+        <input type="radio" id="infanitles" name="pastel" value="infanitles"/>
+        <label for="infanitles">Infatinles</label><br/>
+        <input type="radio" id="extra" name="pastel" value="extra"/>
+        <label for="extra">Extra Grande</label><br/>
+        <input type="radio" id="xv" name="pastel" value="xv"/>
+        <label for="xv">XV años</label><br/>
+        <input type="radio" id="bodas" name="pastel" value="bodas"/>
+        <label for="bodas">Bodas</label><br/>
+
+        <label class="letra">Tipo de decoracion</label><br/>
+        <input type="radio" id="3D" name="decoracion" value="3D"/>
+        <label for="3D">Decoraciones en 3D</label><br/>
+        <input type="radio" id="geométricas" name="decoracion" value="geométricas"/>
+        <label for="geométricas">Decoraciones geométricas</label><br/>
+        <input type="radio" id="florales" name="decoracion" value="florales"/>
+        <label for="florales">Decoraciones florales</label><br/>
+        <input type="radio" id="semidesnuda" name="decoracion" value="semidesnuda"/>
+        <label for="semidesnuda">Decoración semidesnuda o naked</label><br/>
+        <input type="radio" id="cakese" name="decoracion" value="cakese"/>
+        <label for="cakese">Decoración drip cakese</label><br/>
+
+        <label class="letra">Tipo de sabor</label><br/>
+        <input type="checkbox" id="limon" name="musica" value="limon"/>
+        <label for="limon">Limóm</label><br/>
+        <input type="checkbox" id="naranja" name="musica" value="naranja"/>
+        <label for="naranja">Naranja</label><br/>
+        <input type="checkbox" id="fresa" name="musica" value="fresa"/>
+        <label for="fresa">Fresa </label><br/>
+        <input type="checkbox" id="frambueza" name="musica" value="frambueza"/>
+        <label for="frambueza">Frambuesa</label><br/>
+        <input type="checkbox" id="vainilla" name="musica" value="vainilla"/>
+        <label for="vainilla">Vainilla</label><br/>
+        <input type="checkbox" id="chocolate" name="musica" value="chocolate"/>
+        <label for="chocolate">Chocolate</label><br/>
+        <input type="checkbox" id="mamey" name="musica" value="mamey"/>
+        <label for="mamey">Mamey</label><br/>
+        <input type="checkbox" id="piña" name="musica" value="piña"/>
+        <label for="piña">Piña colada</label><br/>
+        <input type="checkbox" id="mango" name="musica" value="mango"/>
+        <label for="mango">Mago</label><br/>
+        <input type="checkbox" id="mermelada" name="musica" value="mermelada"/>
+        <label for="mermelada">Mermelada</label><br/>
+        <input type="checkbox" id="ganache" name="musica" value="ganache"/>
+        <label for="ganache">Ganache</label><br/>
+        <input type="checkbox" id="frutas" name="musica" value="frutas"/>
+        <label for="frutas">Frutas</label><br/>
+        <input type="checkbox" id="chantilly" name="musica" value="chantilly"/>
+        <label for="chantilly">Chantilly</label><br/>
+        <input type="checkbox" id="trufa" name="musica" value="trufa"/>
+        <label for="trufa">Trufa</label><br/>
+        <input type="checkbox" id="rompope" name="musica" value="rompope"/>
+        <label for="rompope">Rompope</label><br/>
+        <input type="checkbox" id="rojos" name="musica" value="rojos"/>
+        <label for="rojos">Frutos rojos</label><br/>
+        <input type="checkbox" id="durazno" name="musica" value="durazno"/>
+        <label for="durazno">Durazno</label><br/>
+        <input type="checkbox" id="menta" name="musica" value="menta"/>
+        <label for="menta">Chocolate de menta</label><br/>
+        <input type="checkbox" id="red" name="musica" value="red"/>
+        <label for="red">Red velvet</label><br/>
+        <input type="checkbox" id="pvainilla" name="musica" value="pvainilla"/>
+        <label for="pvainilla">Pan de vainilla</label><br/>
+        <input type="checkbox" id="pchocolate" name="musica" value="pchocolate"/>
+        <label for="pchocolate">Pan de chocolate</label><br/>
+        <input type="checkbox" id="plimon" name="musica" value="plimon"/>
+        <label for="plimon">Pan de Limón</label><br/>
+        <input type="checkbox" id="pnaranja" name="musica" value="pnaranja"/>
+        <label for="pnaranja">Pan de Naranja</label><br/>
+
+        <label for="personas">¿Para cuántas personas son? </label><br/>
+        <select id="cantidad" name="personas" class="numero">
+          <option value="uno" selected="true">1-5 personas</option>
+          <option value="dos" BMW>6-10 personas</option>
+          <option value="tres">11-15 personas</option>
+          <option value="cuatro">+20 personas</option>
+        </select>
+          <br/>
+
+        <label for="comentario"> Comentario</label><br />
+        <textarea id="comentario" name="comentario" cols="30" rows="2">
+            
+        </textarea>
+        <br/>
+
+        <div class="con">
+            <div class="b">
+              <a href="index.html" target="_black"><input type="submit" name="enviar" id="enviar" value="Enviar" />
+              </a>
+            </div>
+            <div class="b">
+             <a href=""><input type="reset" name="restablecer" id="restablecer" value="Restablecer" />
+              </a>
+            </div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="nombres">
+      <label for="" >Torres Sánchez Osvaldo Yair</label>
+    </div>
+</body>
+</html>
